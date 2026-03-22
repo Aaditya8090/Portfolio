@@ -106,9 +106,9 @@ function App() {
         <Hero />
         <About />
         <Skills />
+        <Projects />
         <Experience />
         <Education />
-        <Projects />
         <Certificates />
         <Contact />
       </main>
