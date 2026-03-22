@@ -4,12 +4,13 @@ import { Link } from 'react-scroll';
 import { Menu, X } from 'lucide-react';
 import { cn } from '../utils/cn';
 
-{ name: 'About', to: 'about' },
-{ name: 'Skills', to: 'skills' },
-{ name: 'Projects', to: 'projects' },
-{ name: 'Certificates', to: 'certificates' },
-{ name: 'Experience', to: 'experience' },
-{ name: 'Contact', to: 'contact' },
+const navLinks = [
+    { name: 'About', to: 'about' },
+    { name: 'Skills', to: 'skills' },
+    { name: 'Projects', to: 'projects' },
+    { name: 'Certificates', to: 'certificates' },
+    { name: 'Experience', to: 'experience' },
+    { name: 'Contact', to: 'contact' },
 ];
 
 export function Navbar() {
