@@ -7,10 +7,10 @@ import { cn } from '../utils/cn';
 const navLinks = [
     { name: 'About', to: 'about' },
     { name: 'Skills', to: 'skills' },
+    { name: 'Experience', to: 'experience' },
+    { name: 'Education', to: 'education' },
     { name: 'Projects', to: 'projects' },
     { name: 'Certificates', to: 'certificates' },
-    { name: 'Education', to: 'education' },
-    { name: 'Experience', to: 'experience' },
     { name: 'Contact', to: 'contact' },
 ];
 

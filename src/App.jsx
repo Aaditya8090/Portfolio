@@ -106,10 +106,10 @@ function App() {
         <Hero />
         <About />
         <Skills />
+        <Experience />
+        <Education />
         <Projects />
         <Certificates />
-        <Education />
-        <Experience />
         <Contact />
       </main>
 
