@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Card } from './Card';
-import { Briefcase, Trophy, Star, Target, ExternalLink } from 'lucide-react';
+import { Briefcase, Trophy, Star, Target } from 'lucide-react';
 
 export function Experience() {
     const experiences = [
@@ -132,9 +132,6 @@ export function Experience() {
                                             <div className="flex-grow z-10">
                                                 <h4 className="text-lg font-bold text-white mb-1 group-hover:text-primary transition-colors">{item.platform}</h4>
                                                 <p className="text-gray-400 text-sm group-hover:text-gray-300 transition-colors">{item.details}</p>
-                                            </div>
-                                            <div className="opacity-0 flex-shrink-0 -translate-x-4 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-300 z-10">
-                                                <ExternalLink size={20} className="text-gray-400 group-hover:text-primary" />
                                             </div>
                                         </Card>
                                     </a>
