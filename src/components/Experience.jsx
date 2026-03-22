@@ -30,6 +30,11 @@ export function Experience() {
             icon: <img src="https://cdn.simpleicons.org/codechef/FFFFFF" alt="CodeChef" className="w-6 h-6" />
         },
         {
+            platform: "Codeforces",
+            details: "Achieved a max rating of 1146 with active participation in over 40 global contests.",
+            icon: <img src="https://cdn.simpleicons.org/codeforces/1F8ACB" alt="Codeforces" className="w-6 h-6" />
+        },
+        {
             platform: "Problem Solving",
             details: "Solved more than 600 DSA problems across LeetCode, CodeChef and Codeforces.",
             icon: <Target size={20} className="text-emerald-400" />
