@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Card } from './Card';
-import { Briefcase, Trophy, Star, Target } from 'lucide-react';
+import { Briefcase, Trophy, Star, Target, ExternalLink } from 'lucide-react';
 
 export function Experience() {
     const experiences = [
@@ -22,22 +22,26 @@ export function Experience() {
         {
             platform: "LeetCode",
             details: "Current rating 1704, ranked in the Top 12% globally.",
-            icon: <img src="https://cdn.simpleicons.org/leetcode/FFA116" alt="LeetCode" className="w-5 h-5" />
+            icon: <img src="https://cdn.simpleicons.org/leetcode/FFA116" alt="LeetCode" className="w-5 h-5" />,
+            link: "https://leetcode.com/u/aaditya8090"
         },
         {
             platform: "CodeChef",
             details: "Attained 2★ rating showcasing consistency in competitive programming contests.",
-            icon: <img src="https://cdn.simpleicons.org/codechef/FFFFFF" alt="CodeChef" className="w-6 h-6" />
+            icon: <img src="https://cdn.simpleicons.org/codechef/FFFFFF" alt="CodeChef" className="w-6 h-6" />,
+            link: "https://www.codechef.com/users/aaditya8090"
         },
         {
             platform: "Codeforces",
             details: "Achieved a max rating of 1146 with active participation in over 40 global contests.",
-            icon: <img src="https://www.google.com/s2/favicons?domain=codeforces.com&sz=128" alt="Codeforces" className="w-5 h-5 rounded-sm" />
+            icon: <img src="https://www.google.com/s2/favicons?domain=codeforces.com&sz=128" alt="Codeforces" className="w-5 h-5 rounded-sm" />,
+            link: "https://codeforces.com/profile/aaditya8090"
         },
         {
             platform: "Problem Solving",
             details: "Solved more than 600 DSA problems across LeetCode, CodeChef and Codeforces.",
-            icon: <img src="https://www.google.com/s2/favicons?domain=codolio.com&sz=128" alt="Codolio" className="w-5 h-5 rounded-sm" />
+            icon: <img src="https://www.google.com/s2/favicons?domain=codolio.com&sz=128" alt="Codolio" className="w-5 h-5 rounded-sm" />,
+            link: "https://codolio.com/profile/aaditya8090"
         }
     ];
 
@@ -120,15 +124,20 @@ export function Experience() {
                                     viewport={{ once: true, margin: "-50px" }}
                                     transition={{ duration: 0.5, delay: index * 0.1 }}
                                 >
-                                    <Card className="flex items-center gap-6 p-5" hover={true}>
-                                        <div className="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center flex-shrink-0">
-                                            {item.icon}
-                                        </div>
-                                        <div>
-                                            <h4 className="text-lg font-bold text-white mb-1">{item.platform}</h4>
-                                            <p className="text-gray-400 text-sm">{item.details}</p>
-                                        </div>
-                                    </Card>
+                                    <a href={item.link} target="_blank" rel="noopener noreferrer" className="block focus:outline-none focus:ring-2 focus:ring-primary/50 text-left rounded-2xl">
+                                        <Card className="flex items-center gap-6 p-5 group cursor-pointer hover:border-primary/50 transition-colors" hover={true}>
+                                            <div className="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center flex-shrink-0 group-hover:bg-white/10 transition-colors relative z-10">
+                                                {item.icon}
+                                            </div>
+                                            <div className="flex-grow z-10">
+                                                <h4 className="text-lg font-bold text-white mb-1 group-hover:text-primary transition-colors">{item.platform}</h4>
+                                                <p className="text-gray-400 text-sm group-hover:text-gray-300 transition-colors">{item.details}</p>
+                                            </div>
+                                            <div className="opacity-0 flex-shrink-0 -translate-x-4 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-300 z-10">
+                                                <ExternalLink size={20} className="text-gray-400 group-hover:text-primary" />
+                                            </div>
+                                        </Card>
+                                    </a>
                                 </motion.div>
                             ))}
                         </div>
