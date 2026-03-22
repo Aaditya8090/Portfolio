@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Card } from './Card';
-import { Award, MonitorPlay, Network, Server } from 'lucide-react';
+import { ExternalLink } from 'lucide-react';
 
 export function Certificates() {
     const certificates = [
@@ -9,19 +9,22 @@ export function Certificates() {
             title: "Introduction to Hardware and Operating Systems",
             issuer: "Coursera",
             date: "Sept 2024",
-            icon: <MonitorPlay className="text-secondary" size={32} />
+            link: "https://drive.google.com/file/d/1TiIlN19nYw9cT0Rgsqf5msRGfQVxOYIN/view",
+            id: "1TiIlN19nYw9cT0Rgsqf5msRGfQVxOYIN"
         },
         {
             title: "The Bits and Bytes of Computer Networking",
             issuer: "Coursera",
             date: "Sept 2024",
-            icon: <Network className="text-primary" size={32} />
+            link: "https://drive.google.com/file/d/1I-vJdgojh6O5TGwJ_WGEgkn71EYbSr-y/view",
+            id: "1I-vJdgojh6O5TGwJ_WGEgkn71EYbSr-y"
         },
         {
             title: "Fundamentals of Network Communication",
-            issuer: "Certified",
+            issuer: "Coursera",
             date: "Sept 2024",
-            icon: <Server className="text-emerald-400" size={32} />
+            link: "https://drive.google.com/file/d/1wuu4W4H57I0A50uU4YCjiO4bALGXfUSB/view",
+            id: "1wuu4W4H57I0A50uU4YCjiO4bALGXfUSB"
         }
     ];
 
@@ -50,15 +53,32 @@ export function Certificates() {
                             viewport={{ once: true, margin: "-50px" }}
                             transition={{ duration: 0.5, delay: index * 0.1 }}
                         >
-                            <Card className="h-full flex flex-col items-center text-center p-8">
-                                <div className="w-16 h-16 rounded-full bg-white/5 flex items-center justify-center mb-6">
-                                    {cert.icon}
-                                </div>
-                                <h3 className="text-xl font-bold text-white mb-2">{cert.title}</h3>
-                                <p className="text-gray-400 font-medium mb-6 flex-grow">{cert.issuer}</p>
-                                <div className="inline-flex items-center gap-2 px-3 py-1 bg-white/5 border border-white/10 rounded-full mt-auto">
-                                    <Award size={14} className="text-gray-400" />
-                                    <span className="text-xs text-gray-300 font-medium">{cert.date}</span>
+                            <Card className="h-full flex flex-col overflow-hidden group p-0">
+                                <a
+                                    href={cert.link}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="block relative h-56 overflow-hidden w-full border-b border-white/10"
+                                >
+                                    <div className="absolute inset-0 bg-primary/20 group-hover:bg-transparent transition-colors z-10" />
+                                    <img
+                                        src={`https://drive.google.com/thumbnail?id=${cert.id}&sz=w800`}
+                                        alt={cert.title}
+                                        className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+                                        onError={(e) => {
+                                            e.target.src = `https://drive.google.com/uc?export=view&id=${cert.id}`;
+                                        }}
+                                    />
+                                    <div className="absolute top-4 right-4 z-20 w-8 h-8 bg-black/50 backdrop-blur-sm rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                                        <ExternalLink size={14} className="text-white" />
+                                    </div>
+                                </a>
+                                <div className="p-6 flex flex-col flex-grow text-center">
+                                    <h3 className="text-xl font-bold text-white mb-2">{cert.title}</h3>
+                                    <p className="text-gray-400 font-medium mb-4 flex-grow">{cert.issuer}</p>
+                                    <div className="inline-flex justify-center items-center gap-2 px-3 py-1 bg-white/5 border border-white/10 rounded-full mx-auto">
+                                        <span className="text-xs text-gray-300 font-medium">{cert.date}</span>
+                                    </div>
                                 </div>
                             </Card>
                         </motion.div>
