@@ -37,7 +37,7 @@ export function Experience() {
         {
             platform: "Problem Solving",
             details: "Solved more than 600 DSA problems across LeetCode, CodeChef and Codeforces.",
-            icon: <Target size={20} className="text-emerald-400" />
+            icon: <img src="https://www.google.com/s2/favicons?domain=codolio.com&sz=128" alt="Codolio" className="w-5 h-5 rounded-sm" />
         }
     ];
 
