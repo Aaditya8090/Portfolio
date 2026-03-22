@@ -21,9 +21,10 @@ export function Footer() {
                     </a>
                 </div>
 
-                <p className="text-gray-500 text-sm">
-                    &copy; {new Date().getFullYear()} Aditya Kumar. Made with ❤️
-                </p>
+                <div className="text-gray-500 text-sm flex flex-col items-center gap-1">
+                    <p>Made with ❤️</p>
+                    <p>&copy; 2026 Aditya Kumar</p>
+                </div>
             </div>
         </footer>
     );
