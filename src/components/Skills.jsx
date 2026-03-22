@@ -29,6 +29,7 @@ export function Skills() {
             skills: [
                 { name: "Data Structures & Algorithms", level: 95 },
                 { name: "System Design", level: 75 },
+                { name: "Database Management System", level: 85 },
                 { name: "MongoDB", level: 85 },
                 { name: "MySQL / PostgreSQL", level: 80 },
                 { name: "Redis", level: 75 }
