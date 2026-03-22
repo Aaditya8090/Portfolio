@@ -22,12 +22,12 @@ export function Experience() {
         {
             platform: "LeetCode",
             details: "Current rating 1704, ranked in the Top 12% globally.",
-            icon: <Target size={20} className="text-orange-400" />
+            icon: <img src="https://cdn.simpleicons.org/leetcode/FFA116" alt="LeetCode" className="w-5 h-5" />
         },
         {
             platform: "CodeChef",
             details: "Attained 2★ rating showcasing consistency in competitive programming contests.",
-            icon: <Star size={20} className="text-yellow-400" />
+            icon: <img src="https://cdn.simpleicons.org/codechef/FFFFFF" alt="CodeChef" className="w-6 h-6" />
         },
         {
             platform: "Problem Solving",
