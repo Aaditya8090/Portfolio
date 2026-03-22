@@ -61,8 +61,6 @@ export function Education() {
                                 className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)]"
                             >
                                 <Card className="p-6 md:p-8 relative overflow-hidden group-hover:border-primary/50 transition-colors duration-300" hover={true}>
-                                    <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-primary/50 to-secondary/50 hidden group-hover:block transition-all" />
-
                                     <span className="inline-flex items-center gap-2 text-primary text-sm font-semibold tracking-wide mb-3 bg-primary/10 px-3 py-1 rounded-full">
                                         <Calendar size={14} />
                                         {item.period}
