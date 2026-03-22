@@ -79,6 +79,23 @@ export function Contact() {
                         </Card>
 
                         <Card className="flex items-center gap-5 p-6" hover={true}>
+                            <div className="w-14 h-14 bg-[#25D366]/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <img src="https://cdn.simpleicons.org/whatsapp/25D366" alt="WhatsApp" className="w-7 h-7" />
+                            </div>
+                            <div className="overflow-hidden min-w-0 flex-1">
+                                <h4 className="text-sm font-medium text-gray-400 mb-1">WhatsApp Chat</h4>
+                                <a
+                                    href="https://wa.me/910000000000?text=Hi%20Aditya!"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-white font-bold hover:text-[#25D366] transition-colors truncate block md:text-base lg:text-lg"
+                                >
+                                    Message Me
+                                </a>
+                            </div>
+                        </Card>
+
+                        <Card className="flex items-center gap-5 p-6" hover={true}>
                             <div className="w-14 h-14 bg-secondary/10 text-secondary rounded-xl flex items-center justify-center flex-shrink-0">
                                 <MapPin size={24} />
                             </div>
