@@ -61,49 +61,51 @@ export function Experience() {
                     <div className="w-20 h-1 bg-gradient-to-r from-primary to-secondary rounded-full mx-auto" />
                 </motion.div>
 
-                <div className="grid lg:grid-cols-2 gap-12">
+                <div className="grid lg:grid-cols-2 gap-12 relative items-stretch">
                     {/* Experience Timeline */}
                     <div>
-                        <h3 className="text-2xl font-bold text-white mb-8 flex items-center gap-3">
-                            <span className="p-2 bg-secondary/20 rounded-lg text-secondary">
-                                <Briefcase size={24} />
-                            </span>
-                            Work Experience
-                        </h3>
-                        <div className="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-white/10 before:to-transparent">
-                            {experiences.map((exp, index) => (
-                                <motion.div
-                                    key={index}
-                                    initial={{ opacity: 0, x: -20 }}
-                                    whileInView={{ opacity: 1, x: 0 }}
-                                    viewport={{ once: true, margin: "-50px" }}
-                                    transition={{ duration: 0.5 }}
-                                    className="relative flex items-start gap-6 group"
-                                >
-                                    <div className="bg-surface border-2 border-white/10 w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 z-10 group-hover:border-secondary transition-colors relative">
-                                        {exp.icon}
-                                    </div>
-                                    <div className="flex-1 glass p-6 rounded-2xl">
-                                        <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-4 gap-2">
-                                            <div>
-                                                <h4 className="text-xl font-bold text-white">{exp.title}</h4>
-                                                <p className="text-primary font-medium">{exp.company}</p>
-                                            </div>
-                                            <span className="text-xs font-mono px-3 py-1 bg-white/5 rounded-full text-gray-400">
-                                                {exp.period}
-                                            </span>
+                        <div className="lg:sticky lg:top-32">
+                            <h3 className="text-2xl font-bold text-white mb-8 flex items-center gap-3">
+                                <span className="p-2 bg-secondary/20 rounded-lg text-secondary">
+                                    <Briefcase size={24} />
+                                </span>
+                                Work Experience
+                            </h3>
+                            <div className="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-white/10 before:to-transparent">
+                                {experiences.map((exp, index) => (
+                                    <motion.div
+                                        key={index}
+                                        initial={{ opacity: 0, x: -20 }}
+                                        whileInView={{ opacity: 1, x: 0 }}
+                                        viewport={{ once: true, margin: "-50px" }}
+                                        transition={{ duration: 0.5 }}
+                                        className="relative flex items-start gap-6 group"
+                                    >
+                                        <div className="bg-surface border-2 border-white/10 w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 z-10 group-hover:border-secondary transition-colors relative">
+                                            {exp.icon}
                                         </div>
-                                        <ul className="space-y-3">
-                                            {exp.points.map((point, i) => (
-                                                <li key={i} className="text-gray-400 text-sm flex items-start gap-3">
-                                                    <span className="w-1.5 h-1.5 rounded-full bg-secondary/50 mt-1.5 flex-shrink-0" />
-                                                    <span>{point}</span>
-                                                </li>
-                                            ))}
-                                        </ul>
-                                    </div>
-                                </motion.div>
-                            ))}
+                                        <div className="flex-1 glass p-6 rounded-2xl">
+                                            <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-4 gap-2">
+                                                <div>
+                                                    <h4 className="text-xl font-bold text-white">{exp.title}</h4>
+                                                    <p className="text-primary font-medium">{exp.company}</p>
+                                                </div>
+                                                <span className="text-xs font-mono px-3 py-1 bg-white/5 rounded-full text-gray-400">
+                                                    {exp.period}
+                                                </span>
+                                            </div>
+                                            <ul className="space-y-3">
+                                                {exp.points.map((point, i) => (
+                                                    <li key={i} className="text-gray-400 text-sm flex items-start gap-3">
+                                                        <span className="w-1.5 h-1.5 rounded-full bg-secondary/50 mt-1.5 flex-shrink-0" />
+                                                        <span>{point}</span>
+                                                    </li>
+                                                ))}
+                                            </ul>
+                                        </div>
+                                    </motion.div>
+                                ))}
+                            </div>
                         </div>
                     </div>
 
