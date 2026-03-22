@@ -90,12 +90,20 @@ export function Hero() {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5, delay: 0.4 }}
-                        className="flex flex-col sm:flex-row gap-4"
+                        className="flex flex-col sm:flex-row items-center justify-center flex-wrap gap-4"
                     >
                         <Button variant="primary" href="#projects">
                             View Projects <ChevronRight size={18} />
                         </Button>
-                        <Button variant="outline" href="#contact">
+                        <Button
+                            variant="outline"
+                            href="https://drive.google.com/file/d/1s_v4zr8ctDaEbezskIA7yykk5cB262B8/view?usp=sharing"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Download Resume <Download size={18} />
+                        </Button>
+                        <Button variant="ghost" href="#contact">
                             Contact Me
                         </Button>
                     </motion.div>
