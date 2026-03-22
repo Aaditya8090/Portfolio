@@ -17,11 +17,11 @@ export function Skills() {
         {
             title: "Web Technologies",
             skills: [
-                { name: "React.js", level: 85 },
-                { name: "Node.js", level: 85 },
-                { name: "Express.js", level: 80 },
                 { name: "Tailwind CSS", level: 90 },
-                { name: "Next.js", level: 75 }
+                { name: "React.js", level: 85 },
+                { name: "Next.js", level: 75 },
+                { name: "Node.js", level: 85 },
+                { name: "Express.js", level: 80 }
             ]
         },
         {
