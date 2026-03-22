@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { TypeAnimation } from 'react-type-animation';
 import { Button } from './Button';
-import { Download, ChevronRight } from 'lucide-react';
+import { ExternalLink, ChevronRight } from 'lucide-react';
 
 export function Hero() {
     return (
@@ -101,7 +101,7 @@ export function Hero() {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            Download Resume <Download size={18} />
+                            View Resume <ExternalLink size={18} />
                         </Button>
                         <Button variant="ghost" href="#contact">
                             Contact Me
