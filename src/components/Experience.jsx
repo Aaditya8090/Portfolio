@@ -32,13 +32,7 @@ export function Experience() {
         {
             platform: "Codeforces",
             details: "Achieved a max rating of 1146 with active participation in over 40 global contests.",
-            icon: (
-                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-6 h-6">
-                    <rect x="2" y="12" width="5" height="10" rx="1" fill="#FFC107" />
-                    <rect x="9.5" y="6" width="5" height="16" rx="1" fill="#1F8ACB" />
-                    <rect x="17" y="0" width="5" height="22" rx="1" fill="#F44336" />
-                </svg>
-            )
+            icon: <img src="https://www.google.com/s2/favicons?domain=codeforces.com&sz=128" alt="Codeforces" className="w-5 h-5 rounded-sm" />
         },
         {
             platform: "Problem Solving",
