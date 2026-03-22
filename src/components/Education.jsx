@@ -17,14 +17,14 @@ export function Education() {
             institution: "GBPMS School",
             location: "Ghazipur, Uttar Pradesh",
             period: "Apr 2021 – Mar 2022",
-            score: "Percentage: 91.6%"
+            score: "Percentage: 91.6"
         },
         {
             degree: "Matriculation (10th Grade)",
             institution: "GBPMS School",
             location: "Ghazipur, Uttar Pradesh",
             period: "Apr 2019 – Mar 2020",
-            score: "Percentage: 88.4%"
+            score: "Percentage: 88.4"
         }
     ];
 
