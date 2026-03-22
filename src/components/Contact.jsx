@@ -85,7 +85,7 @@ export function Contact() {
                             <div className="overflow-hidden min-w-0 flex-1">
                                 <h4 className="text-sm font-medium text-gray-400 mb-1">WhatsApp Chat</h4>
                                 <a
-                                    href="https://wa.me/910000000000?text=Hi%20Aditya!"
+                                    href="https://wa.me/918090107106?text=Hi%20Aditya!"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="text-white font-bold hover:text-[#25D366] transition-colors truncate block md:text-base lg:text-lg"
