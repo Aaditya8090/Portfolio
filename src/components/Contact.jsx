@@ -72,8 +72,8 @@ export function Contact() {
                             </div>
                             <div className="overflow-hidden min-w-0 flex-1">
                                 <h4 className="text-sm font-medium text-gray-400 mb-1">Email natively</h4>
-                                <a href="mailto:adityakgzp8090@gmail.com" className="text-white font-bold hover:text-primary transition-colors truncate block md:text-base lg:text-lg">
-                                    adityakgzp8090@gmail.com
+                                <a href="mailto:adityakgzp101@gmail.com" className="text-white font-bold hover:text-primary transition-colors truncate block md:text-base lg:text-lg">
+                                    adityakgzp101@gmail.com
                                 </a>
                             </div>
                         </Card>
