@@ -34,7 +34,7 @@ export function Hero() {
                             whileHover={{ scale: 1.05 }}
                         >
                             <img
-                                src="/profile.jpeg"
+                                src={`${import.meta.env.BASE_URL}profile.jpeg`}
                                 alt="Aditya Kumar"
                                 className="w-full h-full object-cover"
                                 onError={(e) => {
